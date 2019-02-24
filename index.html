@@ -160,7 +160,8 @@
         <p>Voluptas dolores nam et exercitationem repudiandae velit. Repellat id delectus totam aut sunt perferendis asperiores officia est. Non iure nulla id quia impedit et.</p>
         <p>Voluptas dolores nam et exercitationem repudiandae velit. Repellat id delectus totam aut sunt perferendis asperiores officia est. Non iure nulla id quia impedit et.</p>
       </div>
-      <div class="col s12 l5 offset-12">
+
+      <div class="col s12 l5 offset-l2">
         <form>
           <div class="input-field">
             <i class="material-icons prefix">email</i>
@@ -171,6 +172,28 @@
             <i class="material-icons prefix">message</i>
             <textarea id="message" class="materialize-textarea"></textarea>
             <label for="message">Your message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services required...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photograogy</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn" type="submit">Submit</button>
           </div>
         </form>
       </div>
@@ -188,6 +211,9 @@
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
       $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
     });
   </script>
 </body>
