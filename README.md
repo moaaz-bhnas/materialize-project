@@ -1,8 +1,10 @@
 # materialize-project
 A responsive photographer portfolio built with Materialize.
 
+## Deployed
+https://moaaz-bhnas.github.io/materialize-project/
+
 ## Screenshots
-![Screenshot](https://i.ibb.co/5vzqPQ8/2019-02-24-12-18-moaaz-bhnas-github-io.png)
 ![Screenshot](https://i.ibb.co/TbXkXCH/2019-02-24-12-18-moaaz-bhnas-github-io-1.png)
 
 ## Requeriments
