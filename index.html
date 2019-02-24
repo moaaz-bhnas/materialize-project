@@ -10,10 +10,57 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <title>Photo Ninja</title>
+
+  <style>
+    header {
+      background-image: url(img/man.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 27rem;
+    }
+    @media (min-width: 670px) {
+      header {
+        min-height: 100vh;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">Photo Ninja</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#">Photo's</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li>
+            <a href="#">Photo's</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!-- photo / grid -->
 
@@ -32,7 +79,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
-
+      $('.sidenav').sidenav();
     });
   </script>
 </body>
