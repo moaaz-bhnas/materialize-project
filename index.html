@@ -31,6 +31,12 @@
     .parallax-container {
       height: 22rem;
     }
+    .tabs .indicator {
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active {
+      background-color: transparent;
+  }
   </style>
 </head>
 <body>
@@ -111,11 +117,33 @@
   </div>
 
   <!-- services / tabs -->
-  <div class="container">
-    <p>Necessitatibus suscipit non qui distinctio provident autem consequatur. Quidem in ea in temporibus qui ratione. Ex quasi dolore dolor quos nam voluptatum. Blanditiis sapiente vel facere doloremque ut rerum quod dolorem molestiae.</p>
-    <p>Praesentium sint enim iste cupiditate. Sit sit commodi cumque. Rem neque consequatur commodi odit totam.</p>
-    <p>Vel voluptatibus vel quis eum eos aperiam officiis consequatur autem. Vel nisi et vitae hic optio eum est numquam. Fugit est maiores quia doloremque. Voluptas aut ipsa excepturi similique quos blanditiis adipisci ipsam repellendus. Perspiciatis repudiandae odio.</p>
-  </div>
+  <section class="section container" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do ..</h2>
+        <p>Perspiciatis laboriosam voluptatem sed ut. Ducimus quod inventore quia quia enim. Aspernatur incidunt similique voluptatem nesciunt. Dolores aliquam consectetur qui quia dolorum corrupti ipsum. Molestiae illo et.</p>
+      </div>
+
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text textdarken-4">PHOTOGRAPHY</p>
+          <p>Recusandae eos eius. Et saepe commodi placeat non quisquam labore. Velit beatae sit vitae et id asperiores id. Est enim et asperiores facere facere. Possimus modi doloremque praesentium deserunt. Eos porro porro nobis dolores eos et.</p>
+        </div>
+        <div class="col s12" id="editing">
+            <p class="flow-text indigo-text textdarken-4">EDITING</p>
+            <p>Illum officiis similique ad ipsum nesciunt. Molestiae aliquam reprehenderit maiores nesciunt neque. Sit ad cumque accusantium. Quos error natus tempore quia mollitia. Eligendi recusandae consequuntur et provident suscipit id ad architecto in. Omnis dignissimos rerum provident.</p>
+          </div>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
   <div class="parallax-container">
@@ -142,6 +170,7 @@
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
+      $('.tabs').tabs();
     });
   </script>
 </body>
